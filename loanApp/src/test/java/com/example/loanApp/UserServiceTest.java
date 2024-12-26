@@ -55,6 +55,7 @@ public class UserServiceTest {
         UserInfo createdUser = userService.createUser(userDto);
 
         // Assert
+        //Assert
         assertEquals(userDto.getName(), createdUser.getName());
         assertEquals(userDto.getEmail(), createdUser.getEmail());
         assertEquals("encodedPassword", createdUser.getPassword());
